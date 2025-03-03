@@ -63,3 +63,11 @@ class DriverStatusProvider : ContentProvider() {
         return "vnd.android.cursor.dir/vnd.$PROVIDER_NAME.driver_status"
     }
 }
+
+// Add this in manifest :-
+//<provider
+//android:name=".utils.customer_blocking.ConsumerAppStatusProvider"
+//android:authorities="com.lmev.rider.dev.statusprovider"
+//android:exported="false"
+//android:grantUriPermissions="true"
+//android:multiprocess="true" />
